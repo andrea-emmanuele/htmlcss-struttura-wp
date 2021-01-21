@@ -9,6 +9,11 @@ header, main, footer {
   margin: 0 auto;
 }
 
+footer {
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+
 /* Grid system */
 
 div.row {
@@ -45,7 +50,7 @@ div.row > div.col-25 {
 /* header content*/
 
 header > div.row > div.col-100 > div {
-  height: 100px;
+  height: 110px;
   background: #E579E6;
 }
 
@@ -54,10 +59,6 @@ header > div.row > div.col-100 > div {
 main > div.row:first-child > div.col-100 > div {
   height: 350px;
   background: #E1D67A;
-}
-
-div.no-margin {
-  margin: 0;
 }
 
 main > div.row:nth-child(2) {
@@ -73,4 +74,19 @@ main > div.row:nth-child(2) > div.col-100 > div.row:nth-child(2) > div.col-25 > 
 main > div.row:nth-child(2) > div.col-100 > div.row:nth-child(2) > div.col-50 > div  {
   height: 400px;
   background: #ABCFE7;
+}
+
+div.no-margin {
+  margin: 0;
+}
+
+div.p-b20 {
+  padding-bottom: 20px;
+}
+
+/* footer content */
+
+footer > div.row > div.col-100 > div {
+  height: 45px;
+  background: #8801FE;
 }
