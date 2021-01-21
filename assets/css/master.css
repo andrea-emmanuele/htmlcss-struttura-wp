@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+header, main, footer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Grid system */
+
+div.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+div.row > div[class^="col-"] {
+  float: left;
+}
+
+div.row > div.col-100 {
+  width: 100%;
+}
+
+div.row > div[class^="col-"] > div.content {
+  margin: 20px 0;
+  height: 100px;
+  background: #E579E6;
+}
+
+main div.row {
+  margin-top: -20px;
+}
