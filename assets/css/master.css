@@ -31,7 +31,7 @@ div.row > div.col-100 {
 
 /* header */
 
-header > div.row > div[class^="col-"] > div {
+header > div.row > div.col-100 > div {
   margin-top: 20px;
   height: 100px;
   background: #E579E6;
@@ -39,14 +39,19 @@ header > div.row > div[class^="col-"] > div {
 
 /* main */
 
-main > div.row > div[class^="col-"] > div {
+main > div.row > div.col-100 > div {
   margin-top: 20px;
   height: 350px;
   background: #E1D67A;
 }
 
-main > div.row:nth-child(2) > div[class^="col-"] > div {
+main > div.row:nth-child(2) > div.col-100 > div {
   margin-top: 20px;
   height: 450px;
   background: #0086FF;
+}
+
+main > div.row:nth-child(2) > div.col-100 > div > div.row > div.col-100 > div {
+  height: 60px;
+  background: #ABCFE7;
 }
